@@ -2,13 +2,13 @@
 
 import React, {
   useState,
-  useEffect
+  useLayoutEffect
 } from 'react'
 
 import Image from 'next/image';
 import Astro from '@/../../inertia/public/Astro.png';
 import Link from 'next/link';
-import { ActiveLink } from './active-link';
+import { ActiveLink } from '../active-link';
 
 const Navbar = () => {
   const [header, setHeader] = useState(false);
@@ -22,7 +22,7 @@ const Navbar = () => {
   }
 
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     window.addEventListener('scroll', scrollHeader)
 
     return () => {
