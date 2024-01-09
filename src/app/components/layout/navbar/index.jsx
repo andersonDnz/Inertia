@@ -41,8 +41,7 @@ const Navbar = () => {
             <Image
               src={Astro}
               alt="Icone do site"
-              width={50}
-              height={300}
+              style={{ maxWidth: '50px', height: 'auto' }}
             />
             <h1 className='w-1/2 p-4  text-slate-50'>Inertia</h1>
           </Link>

@@ -10,15 +10,15 @@ const Footer = () => {
   return (
     <footer className="text-center justify-center  bg-blue-700 p-10">
       <div>
-        <ul className="flex justify-center">
-          <li className="p-4">
-            <PiInstagramLogoLight />
+        <ul className="flex justify-center text-white cursor-pointer ">
+          <li className="p-4 ">
+            <PiInstagramLogoLight size={30} />
           </li>
           <li className="p-4">
-            <PiFacebookLogoLight />
+            <PiFacebookLogoLight size={30} />
           </li>
           <li className="p-4">
-            <PiLinkedinLogoLight />
+            <PiLinkedinLogoLight size={30} />
           </li>
         </ul>
       </div>
