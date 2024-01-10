@@ -12,6 +12,10 @@ body,
   background-color: #efefef;
 }
 
+.dark body {
+  background-color: grey;
+  color: #fff
+}
 
 h1 {
   @apply text-4xl;

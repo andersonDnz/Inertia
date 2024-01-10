@@ -7,7 +7,6 @@ import Footer from './components/layout/footer'
 
 import './globals.css'
 
-
 const roboto = Roboto({ weight: '400', subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -23,7 +22,8 @@ export default function RootLayout({
 
 
   return (
-    <html lang="pt-br">
+    <html lang="pt-br"
+      suppressHydrationWarning>
       <body className={roboto.className}>
         <Navbar />
         <main className='min-h-screen flex flex-col'>

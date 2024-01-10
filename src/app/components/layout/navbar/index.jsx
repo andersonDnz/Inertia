@@ -60,7 +60,9 @@ const Navbar = () => {
             </ActiveLink>
           </div>
         </div>
-        <DarkModeToggle />
+        <div className='flex gap-[20px]'>
+          <DarkModeToggle />
+        </div>
       </nav>
     </div>
   )

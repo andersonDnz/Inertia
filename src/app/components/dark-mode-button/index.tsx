@@ -6,7 +6,11 @@ const DarkModeToggle = () => {
 
   const handleToggle = () => {
     setDarkMode(!darkMode);
-    // Adicione lógica para alternar entre os estilos de modo claro e escuro aqui
+    if (darkMode) {
+      document.documentElement.classList.remove('dark');
+    } else {
+      document.documentElement.classList.add('dark');
+    }
   };
 
   return (
