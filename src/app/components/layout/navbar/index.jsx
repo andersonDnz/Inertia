@@ -10,6 +10,8 @@ import Astro from '@/../../inertia/public/Astro.png';
 import Link from 'next/link';
 import { ActiveLink } from '../active-link';
 
+import DarkModeToggle from '../../dark-mode-button';
+
 const Navbar = () => {
   const [header, setHeader] = useState(false);
 
@@ -58,6 +60,7 @@ const Navbar = () => {
             </ActiveLink>
           </div>
         </div>
+        <DarkModeToggle />
       </nav>
     </div>
   )

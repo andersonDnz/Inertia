@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 
@@ -19,6 +20,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+
   return (
     <html lang="pt-br">
       <body className={roboto.className}>
