@@ -22,8 +22,7 @@ export default function RootLayout({
 
 
   return (
-    <html lang="pt-br"
-      suppressHydrationWarning>
+    <html lang="pt-br">
       <body className={roboto.className}>
         <Navbar />
         <main className='min-h-screen flex flex-col'>

@@ -48,7 +48,7 @@ const Navbar = () => {
             <h1 className='w-1/2 p-4  text-slate-50'>Inertia</h1>
           </Link>
         </div>
-        <div className='flex gap-[20px] text-slate-50'>
+        <div className='flex gap-[20px] p-4 text-slate-50'>
           <div>
             <ActiveLink href="/templates/about">
               About
@@ -60,7 +60,7 @@ const Navbar = () => {
             </ActiveLink>
           </div>
         </div>
-        <div className='flex gap-[20px]'>
+        <div className='p-4'>
           <DarkModeToggle />
         </div>
       </nav>
