@@ -17,6 +17,10 @@ body {
   @apply bg-gradient-to-r from-blue-950 via-purple-950 to-pink-950 transition-colors;
 }
 
+.dark footer {
+  @apply bg-gradient-to-r from-blue-950 via-purple-950 to-pink-950 transition-colors;
+}
+
 h1 {
   @apply text-4xl;
   font-family: 'Geologica', sans-serif;
