@@ -10,7 +10,11 @@ body {
 }
 
 .dark body {
-  @apply bg-slate-900 text-stone-100 transition-colors
+  @apply bg-slate-900 text-stone-100 transition-colors;
+}
+
+.dark nav {
+  @apply bg-gradient-to-r from-blue-950 via-purple-950 to-pink-950 transition-colors;
 }
 
 h1 {

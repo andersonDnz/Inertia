@@ -17,7 +17,7 @@ const DarkModeToggle: React.FC = () => {
 
   return (
     <div className="bg-stone-200 mr-10  w-20 h-10 rounded-full">
-      <button type='submit' className={`flex items-center justify-center w-10 h-10 rounded-full bg-blue-500 dark-mode-toggle cursor-pointer  transition-transform duration-slow transform ${darkMode ? 'translate-x-1/1' : 'translate-x-full bg-stone-700 text-white'
+      <button type='submit' className={`flex items-center justify-center w-10 h-10 rounded-full bg-blue-500 dark-mode-toggle cursor-pointer  transition-transform duration-slow transform ${darkMode ? 'translate-x-1/1' : 'translate-x-full bg-purple-700 text-white'
         }`} onClick={handleToggle}>
         {darkMode ? (<FaRegMoon />) : (<FaSun />)}
       </button>

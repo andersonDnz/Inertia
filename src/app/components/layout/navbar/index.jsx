@@ -36,7 +36,7 @@ const Navbar = () => {
 
 
   return (
-    <div className={header ? "fixed w-[100%] bg-gradient-to-r from-blue-700 via-purple-700 to-pink-700 h-32" : "bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 h-32"}>
+    <div className={header ? "fixed w-[100%] bg-gradient-to-r from-blue-700 via-purple-700 to-pink-700 " : "bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 "}>
       <nav className='header flex  justify-between m-auto py-[15px] p-4'>
         <div className='flex ml-10'>
           <Link className='flex' href="/">
