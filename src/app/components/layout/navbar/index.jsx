@@ -8,9 +8,9 @@ import React, {
 import Image from 'next/image';
 import Astro from '@/../../inertia/public/Astro.png';
 import Link from 'next/link';
-import { ActiveLink } from '../active-link';
 
 import DarkModeToggle from '../../dark-mode-button';
+import { LinksComponents } from '../../common';
 
 const Navbar = () => {
   const [header, setHeader] = useState(false);
@@ -48,19 +48,8 @@ const Navbar = () => {
             <h1 className='w-1/2 p-4  text-slate-50'>Inertia</h1>
           </Link>
         </div>
-        <div className='flex gap-[20px] p-4 text-slate-50'>
-          <div>
-            <ActiveLink href="/templates/about">
-              About
-            </ActiveLink>
-          </div>
-          <div>
-            <ActiveLink href="/templates/contact">
-              Contact
-            </ActiveLink>
-          </div>
-        </div>
-        <div className='p-4'>
+        <div className='flex p-4 '>
+          <LinksComponents />
           <DarkModeToggle />
         </div>
       </nav>
