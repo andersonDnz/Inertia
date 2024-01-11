@@ -22,12 +22,14 @@ body {
 }
 
 h1 {
-  @apply text-4xl;
-  font-family: 'Geologica', sans-serif;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Geologica', sans-serif, ;
+  font-family: 'Open Sans';
+}
+
+p {
+  font-size: 20px;
 }
 
 a {
-  @apply text-2xl;
   font-family: 'Open Sans', sans-serif;
 }

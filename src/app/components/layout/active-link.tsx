@@ -28,16 +28,18 @@ export const ActiveLink = ({ href, children, ...rest }: ActiveLinkProps) => {
         {...rest}
         href={href}
         style={{
-          padding: '8px 12px',
-          borderRadius: '8px',
+          padding: '8px 13px',
+          border: '1px solid #fff',
+          borderRadius: '8rem',
           marginRight: '16px',
-          fontSize: '1.6rem',
-          color: `${isActive ? 'black' : 'white'
+          fontSize: '1.1rem',
+          color: `${isActive ? 'white' : 'white'
             }`,
-          backgroundColor: `${isActive ? '#539daa' : 'transparent'}`
+          backgroundColor: `${isActive ? '#4b7bf6' : ''}`
         }}
       >
-        {children}</Link>
-    </div>
+        {children}
+      </Link>
+    </div >
   )
 }
