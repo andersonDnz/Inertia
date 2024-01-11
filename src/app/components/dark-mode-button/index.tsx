@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import { FaRegMoon, FaSun } from 'react-icons/fa';
 
-const DarkModeToggle = () => {
-  const [darkMode, setDarkMode] = useState(false);
+const DarkModeToggle: React.FC = () => {
+  const [darkMode, setDarkMode] = useState<boolean>(false);
 
   const handleToggle = () => {
     setDarkMode(!darkMode);
