@@ -35,7 +35,7 @@ export const ActiveLink = ({ href, children, ...rest }: ActiveLinkProps) => {
           fontSize: '1.1rem',
           color: `${isActive ? 'white' : 'white'
             }`,
-          backgroundColor: `${isActive ? '#4b7bf6' : ''}`
+          backgroundColor: `${isActive ? 'rgb(6, 182, 212)' : ''}`
         }}
       >
         {children}

@@ -10,7 +10,7 @@ body {
 }
 
 .dark body {
-  @apply bg-slate-900 text-stone-100 transition-colors;
+  @apply bg-gray-900 text-stone-100 transition-colors;
 }
 
 .dark nav {
