@@ -15,7 +15,7 @@ export const Carousel = ({ width, height, items }: CarouselProps) => {
   const [activeIndex, setActiveIndex] = React.useState<number>(0);
 
   return (
-    <div>
+    <div className='carousel-container'>
       {
         items.map((item, index) => (
           <CarouselItem key={index} index={index} activeIndex={activeIndex}>

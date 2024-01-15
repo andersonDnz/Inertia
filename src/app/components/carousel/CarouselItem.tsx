@@ -9,7 +9,22 @@ export interface CardProps {
 
 
 export const CarouselItem = ({ children, index, activeIndex }: CardProps) => {
+
+  const offset = (index - activeIndex) / 4;
+  const diretction = Math.sign(index - activeIndex);
+  const obsOffset = Math.abs(offset);
+
+  const cssTransformProproeties = `
+    rotateY(calc(${1} * 45deg))
+  `;
+
   return (
-    <div>{children}</div>
+    <div className="carousel-item"
+      style={{
+        transform: cssTransformProproeties,
+      }}
+    >
+      {children}
+    </div>
   )
 }

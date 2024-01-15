@@ -14,10 +14,7 @@ const imageItems = [
 
 export default function Home() {
   return (
-    <div>
-      <h1>
-        Welcome to inertia!
-      </h1>
+    <div className="flex w-full flex-1 flex-col items-center justify-center px-20 ">
       <Carousel items={[imageItems]} />
     </div >
 

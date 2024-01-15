@@ -33,3 +33,13 @@ p {
 a {
   font-family: 'Open Sans', sans-serif;
 }
+
+.carousel-container {
+  @apply relative h-32 w-3/6 sm:h-40 md:h-56;
+  perspective: 450px;
+  transform-style: preserve-3d;
+}
+
+.carousel-item {
+  @apply absolute w-full h-full cursor-pointer overflow-hidden rounded-3xl drop-shadow-4xl transition-all duration-700;
+}
