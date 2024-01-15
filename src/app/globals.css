@@ -43,3 +43,15 @@ a {
 .carousel-item {
   @apply absolute w-full h-full cursor-pointer overflow-hidden rounded-3xl drop-shadow-4xl transition-all duration-700;
 }
+
+.carousel-btn-switch-card {
+  @apply absolute z-40 flex h-9 cursor-pointer items-center justify-center rounded-full border-2 border-[#302e30] bg-[#181818] text-2xl opacity-75 transition duration-300 hover:bg-opacity-100 md:h-12 md:w-12;
+}
+
+.carousel-btn-switch-card-left {
+  @apply right-1/2 top-1/2 translate-x-[-200px] translate-y-[-50%] transform sm:translate-x-[-250px] md:translate-x-[-300px] lg:translate-x-[-350px];
+}
+
+.carousel-btn-switch-card-right {
+  @apply left-1/2 top-1/2 translate-x-[200px] translate-y-[-50%] transform sm:translate-x-[250px] md:translate-x-[300px] lg:translate-x-[350px];
+}

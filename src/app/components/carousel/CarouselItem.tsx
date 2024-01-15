@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export interface CardProps {
   children?: React.ReactNode;
@@ -6,25 +6,37 @@ export interface CardProps {
   activeIndex: number;
 }
 
-
-
-export const CarouselItem = ({ children, index, activeIndex }: CardProps) => {
+export default function CarouselItem({ children, index, activeIndex }: CardProps) {
 
   const offset = (index - activeIndex) / 4;
-  const diretction = Math.sign(index - activeIndex);
+  const direction = Math.sign(index - activeIndex);
   const obsOffset = Math.abs(offset);
 
-  const cssTransformProproeties = `
-    rotateY(calc(${1} * 45deg))
+  const cssTransformProperties = `
+    rotateY(calc(${offset} * 55deg))
+    scaleY(calc(1 + ${obsOffset} * -0.5))
+    translateX(calc(${direction} * -3.5rem))
+    translateZ(calc(${obsOffset} * -35rem))
+  `;
+
+  const cssOpacity = `
+    ${Math.abs(index - activeIndex) >= 3 ? '0' : '1'}
+  `;
+
+  const cssDisplay = `
+    ${Math.abs(index - activeIndex) >= 3 ? 'none' : 'block'}
   `;
 
   return (
     <div className="carousel-item"
       style={{
-        transform: cssTransformProproeties,
+        transform: cssTransformProperties,
+        opacity: cssOpacity,
+        display: cssDisplay,
       }}
     >
       {children}
     </div>
-  )
+  );
 }
+
