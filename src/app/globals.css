@@ -35,13 +35,13 @@ a {
 }
 
 .carousel-container {
-  @apply relative h-32 w-3/6 sm:h-40 md:h-56;
+  @apply h-32 w-3/6 sm:h-40 md:h-56;
   perspective: 550px;
   transform-style: preserve-3d;
 }
 
 .carousel-item {
-  @apply absolute h-full w-full cursor-pointer rounded-2xl drop-shadow-4xl transition-all duration-700;
+  @apply absolute h-full w-full cursor-pointer rounded-3xl drop-shadow-4xl transition-all duration-700;
 }
 
 .carousel-btn-switch-card {
@@ -61,5 +61,5 @@ a {
 }
 
 .carousel-indicator-container {
-  @apply absolute left-1/2 -bottom-5 flex h-5 w-20 -translate-x-1/2 transform items-center justify-center space-x-5 md:-bottom-10;
+  @apply absolute left-1/2 -bottom-10 flex h-5 w-20 -translate-x-1/2 transform items-center justify-center space-x-5 md:-bottom-10;
 }
