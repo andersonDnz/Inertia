@@ -4,6 +4,7 @@ import React from 'react'
 import { IoIosArrowBack } from 'react-icons/io'
 
 import CarouselItem from './CarouselItem';
+import CarouselIndicator from './CarouselIndeicator';
 
 export interface CarouselProps {
   width?: number;
@@ -59,6 +60,12 @@ export const Carousel = ({ width, height, items }: CarouselProps) => {
               }} />
           </button>
         )}
+      <CarouselIndicator
+        activeIndex={activeIndex}
+        length={items.length}
+        onChange={(index) => {
+          setActiveIndex(index);
+        }} />
     </div>
   );
 };

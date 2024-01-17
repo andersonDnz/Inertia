@@ -6,7 +6,7 @@
 
 
 body {
-  @apply bg-slate-200 transition-colors;
+  @apply bg-slate-200 transition-colors h-screen;
 }
 
 .dark body {
@@ -36,12 +36,12 @@ a {
 
 .carousel-container {
   @apply relative h-32 w-3/6 sm:h-40 md:h-56;
-  perspective: 450px;
+  perspective: 550px;
   transform-style: preserve-3d;
 }
 
 .carousel-item {
-  @apply absolute w-full h-full cursor-pointer overflow-hidden rounded-3xl drop-shadow-4xl transition-all duration-700;
+  @apply absolute h-full w-full cursor-pointer rounded-2xl drop-shadow-4xl transition-all duration-700;
 }
 
 .carousel-btn-switch-card {
@@ -49,9 +49,17 @@ a {
 }
 
 .carousel-btn-switch-card-left {
-  @apply right-1/2 top-1/2 translate-x-[-200px] translate-y-[-50%] transform sm:translate-x-[-250px] md:translate-x-[-300px] lg:translate-x-[-350px];
+  @apply right-1/2 top-1/2 translate-x-[-200px] translate-y-[-50%] transform sm:translate-x-[-250px] md:translate-x-[-300px] lg:translate-x-[-550px];
 }
 
 .carousel-btn-switch-card-right {
-  @apply left-1/2 top-1/2 translate-x-[200px] translate-y-[-50%] transform sm:translate-x-[250px] md:translate-x-[300px] lg:translate-x-[350px];
+  @apply left-1/2 top-1/2 translate-x-[200px] translate-y-[-50%] transform sm:translate-x-[250px] md:translate-x-[300px] lg:translate-x-[550px];
+}
+
+.carousel-indicator-dots {
+  @apply h-2 w-2 rounded-full bg-blue-800 opacity-50 transition-all duration-500 hover:w-4 hover:opacity-100;
+}
+
+.carousel-indicator-container {
+  @apply absolute left-1/2 -bottom-5 flex h-5 w-20 -translate-x-1/2 transform items-center justify-center space-x-5 md:-bottom-10;
 }

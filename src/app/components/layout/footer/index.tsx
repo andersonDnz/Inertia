@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="text-center justify-center  bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 h-30">
+    <footer className=" text-center justify-center  bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 h-30">
       <div>
         <ul className="flex justify-center text-white cursor-pointer ">
           <li className="p-5 ">
