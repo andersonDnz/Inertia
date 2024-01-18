@@ -1,8 +1,9 @@
 import { SlideComponent } from "./components/SlideComponent";
 
+
 export default function Home() {
   return (
-    <div>
+    <div >
       <SlideComponent />
     </div>
   )
