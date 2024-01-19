@@ -9,7 +9,7 @@ export const LinksComponents = () => {
         Animes
       </ActiveLink>
       <ActiveLink href="/templates/series">
-        series
+        Series
       </ActiveLink>
     </div>
   )

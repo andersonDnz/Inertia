@@ -5,8 +5,12 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 
 
-export const SlideComponent = () => {
-  const slides = [
+interface Slide {
+  url: string;
+}
+
+export const SlideComponent: React.FC = () => {
+  const slides: Slide[] = [
     {
       url: 'https://images5.alphacoders.com/685/685935.jpg'
     },
@@ -18,21 +22,21 @@ export const SlideComponent = () => {
     }
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
 
   const prevSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    const isFirstSlide: boolean = currentIndex === 0;
+    const newIndex: number = isFirstSlide ? slides.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
 
   const nextSlide = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    const isLastSlide: boolean = currentIndex === slides.length - 1;
+    const newIndex: number = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
 
-  const goToSlide = (slideIndex: number) => {
+  const goToSlide = (slideIndex: number): void => {
     setCurrentIndex(slideIndex)
   }
 
