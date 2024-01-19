@@ -5,11 +5,11 @@ import { ActiveLink } from '../../layout/active-link'
 export const LinksComponents = () => {
   return (
     <div className='flex  text-slate-50 mr-5 p-4'>
-      <ActiveLink href="/templates/about">
-        About
+      <ActiveLink href="/templates/animes">
+        Animes
       </ActiveLink>
-      <ActiveLink href="/templates/contact">
-        Contact
+      <ActiveLink href="/templates/series">
+        series
       </ActiveLink>
     </div>
   )
