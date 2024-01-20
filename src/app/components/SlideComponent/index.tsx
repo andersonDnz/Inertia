@@ -14,14 +14,14 @@ export const SlideComponent: React.FC = () => {
   const slides: Slide[] = [
     {
       url: 'https://images5.alphacoders.com/685/685935.jpg',
-      caption: 'Texto 1',
+      caption: 'Deadpool é o filme mais esperado da marvel em 2024',
     },
     {
-      url: 'https://c4.wallpaperflare.com/wallpaper/632/18/407/joker-2019-movie-joker-joaquin-phoenix-hd-wallpaper-preview.jpg',
+      url: 'https://i.ytimg.com/vi/OewwCPv_82A/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC_wj4TIZ8_5-yXdKi4D-yc8vgeMA',
       caption: 'Texto 2',
     },
     {
-      url: 'https://sm.ign.com/t/ign_br/screenshot/default/imagem-2023-12-11-104454758_743b.960.jpg',
+      url: 'https://staticg.sportskeeda.com/editor/2023/04/d1a35-16821201572498-1920.jpg',
       caption: 'Texto 3',
     }
   ];
@@ -53,13 +53,15 @@ export const SlideComponent: React.FC = () => {
         }}
       >
         <div
+          className={`w-full h-full rounded-2xl duration-500 ${'sm:w-full ' +
+            'xl:w-[min(100%, 870px)] ' +
+            'xl:h-[min(100%, 870px)] ' +
+            'w-[calc(100vw - 40px)]'
+            }`}
           style={{
             backgroundImage: `url(${slides[currentIndex].url})`,
             backgroundSize: 'cover',
-            height: '100%',
-            width: 'auto',
           }}
-          className='w-full h-full rounded-2xl  duration-500'
         ></div>
 
         <div
@@ -68,19 +70,22 @@ export const SlideComponent: React.FC = () => {
             top: '50%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
-            color: 'white',
-            fontSize: '24px',
-            textAlign: 'center',
+            color: 'blue',
+            fontSize: '50px',
+            textAlign: 'end',
+            direction: 'rtl',
           }}
         >
-          {slides[currentIndex].caption}
+          <h1>
+            {slides[currentIndex].caption}
+          </h1>
         </div>
       </div>
 
-      <div className=' hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[50%] left-20 text-2xl rounded-full p-2  bg-black/20 text-white cursor-pointer'>
+      <div className=' hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[50%] left-20 text-2xl rounded-full p-2  bg-black/20 text-white cursor-pointer  transition duration-300 ease-out hover:text-blue-500'>
         <BsChevronCompactLeft onClick={prevSlide} size={30} />
       </div>
-      <div className=' hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[50%] right-20 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer '>
+      <div className=' hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[50%] right-20 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer  transition duration-300 ease-out hover:text-blue-500'>
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
 
@@ -89,7 +94,7 @@ export const SlideComponent: React.FC = () => {
           <div
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
-            className='text-2xl cursor-pointer'
+            className='text-2xl cursor-pointer  transition duration-300 ease-out hover:text-blue-500'
           >
             <RxDotFilled />
           </div>
