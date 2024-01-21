@@ -37,10 +37,6 @@ const Navbar = () => {
       : 'linear-gradient(to right, #667EEA, #764BA2)',
   };
 
-  const contentStyle = {
-    marginTop: header ? '64px' : 0,
-  };
-
   return (
     <div>
       <div style={navbarStyle}>

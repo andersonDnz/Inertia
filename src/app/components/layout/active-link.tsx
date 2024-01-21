@@ -18,10 +18,6 @@ export const ActiveLink = ({ href, children, ...rest }: ActiveLinkProps) => {
     pathname === rest.as ||
     (rest.as && pathname.startsWith(String(rest.as)));
 
-
-
-
-
   return (
     <div>
       <Link

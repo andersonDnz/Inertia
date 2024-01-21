@@ -7,6 +7,7 @@
 
 body {
   @apply bg-slate-200 transition-colors h-screen;
+
 }
 
 .dark body {
@@ -22,8 +23,13 @@ body {
 }
 
 h1 {
-  font-family: 'Geologica', sans-serif, ;
+
+  font-family: 'Geologica', sans-serif;
   font-family: 'Open Sans';
+}
+
+p {
+  font-size: 16px;
 }
 
 a {

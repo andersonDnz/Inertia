@@ -16,19 +16,19 @@ interface Slide {
 export const SlideComponent: React.FC = () => {
   const slides: Slide[] = [
     {
-      url: 'https://images5.alphacoders.com/685/685935.jpg',
-      caption: 'Deadpool é o filme mais esperado da marvel em 2024',
-      link: 'templates/cine',
+      url: 'https://cdn.ome.lt/59IynoEXIBUJMnMnr2gFYsiKqvQ=/987x0/smart/uploads/conteudo/fotos/deadpool.jpeg',
+      caption: 'Ryan Reynolds aceita Emmy vestido como Deadpool e fala de novo filme',
+      link: 'pages/cine',
     },
     {
       url: 'https://i.ytimg.com/vi/OewwCPv_82A/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC_wj4TIZ8_5-yXdKi4D-yc8vgeMA',
       caption: 'Coringa 2 ganha data de estreia oficial',
-      link: 'templates/cine',
+      link: 'pages/cine',
     },
     {
       url: 'https://sm.ign.com/t/ign_br/gallery/t/the-bigges/the-biggest-anime-coming-in-2024_xf48.600.jpg',
       caption: 'Os maiores animes que chegam em 2024',
-      link: 'templates/animes'
+      link: 'pages/animes'
     }
   ];
 
@@ -59,8 +59,6 @@ export const SlideComponent: React.FC = () => {
             height: '100%',
           }}
         >
-
-
           <div
             className={`w-full h-full rounded-2xl duration-500 ${'sm:w-full ' +
               'xl:w-[min(100%, 870px)] ' +
@@ -78,7 +76,7 @@ export const SlideComponent: React.FC = () => {
             style={{
               backgroundColor: 'rgba(34,63,90, 0.75)',
               position: 'absolute',
-              top: '60%',
+              top: '50%',
               left: '50%',
               transform: 'translate(-50%, -50%)',
               color: 'white',
