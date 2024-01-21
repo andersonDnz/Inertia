@@ -18,11 +18,11 @@ export const SlideComponent: React.FC = () => {
     },
     {
       url: 'https://i.ytimg.com/vi/OewwCPv_82A/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC_wj4TIZ8_5-yXdKi4D-yc8vgeMA',
-      caption: 'Texto 2',
+      caption: 'Coringa 2 ganha data de estreia oficial',
     },
     {
-      url: 'https://staticg.sportskeeda.com/editor/2023/04/d1a35-16821201572498-1920.jpg',
-      caption: 'Texto 3',
+      url: 'https://sm.ign.com/t/ign_br/gallery/t/the-bigges/the-biggest-anime-coming-in-2024_xf48.600.jpg',
+      caption: 'Os maiores animes que chegam em 2024',
     }
   ];
 
@@ -66,11 +66,12 @@ export const SlideComponent: React.FC = () => {
 
         <div
           style={{
+            backgroundColor: 'rgba(34,63,90, 0.75)',
             position: 'absolute',
-            top: '50%',
+            top: '70%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
-            color: 'blue',
+            color: 'white',
             fontSize: '50px',
             textAlign: 'end',
             direction: 'rtl',

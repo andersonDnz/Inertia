@@ -14,7 +14,7 @@ const Dashboard = () => {
           alt='itachi'
           width={1470}
           height={980}
-          style={{ maxWidth: '100%', height: 'auto' }}
+          style={{ maxWidth: '100%', height: 'auto', width: 'auto' }}
         />
         <h1>Teste</h1>
         <p>
