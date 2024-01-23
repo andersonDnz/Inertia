@@ -6,7 +6,6 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 
 
-
 interface Slide {
   url: string;
   caption: string;
