@@ -16,14 +16,14 @@ interface Slide {
 export const SlideComponent: React.FC = () => {
   const slides: Slide[] = [
     {
-      url: 'https://cdn.ome.lt/59IynoEXIBUJMnMnr2gFYsiKqvQ=/987x0/smart/uploads/conteudo/fotos/deadpool.jpeg',
+      url: 'https://imgs.search.brave.com/cuUr1jPqeUodSTcDJQ_vUQru_hlX-otUFTUJ4mcnWoY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMxLnNyY2RuLmNv/bS93b3JkcHJlc3Mv/d3AtY29udGVudC91/cGxvYWRzLzIwMjQv/MDEvZGVhZHBvb2wt/d2VhcmluZy1hLXN1/aXQtYW5kLWFjY2Vw/dGluZy1hbi1lbW15/LmpwZw',
       caption: 'Ryan Reynolds aceita Emmy vestido como Deadpool e fala de novo filme',
-      link: 'pages/cine',
+      link: 'pages/cine/info',
     },
     {
       url: 'https://i.ytimg.com/vi/OewwCPv_82A/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC_wj4TIZ8_5-yXdKi4D-yc8vgeMA',
       caption: 'Coringa 2 ganha data de estreia oficial',
-      link: 'pages/cine',
+      link: 'pages/cine/newInfo',
     },
     {
       url: 'https://sm.ign.com/t/ign_br/gallery/t/the-bigges/the-biggest-anime-coming-in-2024_xf48.600.jpg',
