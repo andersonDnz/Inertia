@@ -1,6 +1,6 @@
 import { SlideComponent } from "./components/SlideComponent";
 
-import HomePage from '../app/components/homePage';
+import HomeCardes from "../app/components/homePage";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
         <SlideComponent />
       </div>
       <div className="p-4 mb-4">
-        <HomePage />
+        <HomeCardes />
       </div>
     </div>
   );
