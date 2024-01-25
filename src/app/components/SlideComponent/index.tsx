@@ -67,7 +67,7 @@ export const SlideComponent: React.FC = () => {
             style={{
               backgroundImage: `url(${slides[currentIndex].url})`,
               backgroundSize: 'cover',
-              boxShadow: '10px 10px 20px 0px rgb(148, 163, 184)',
+              boxShadow: '10px 5px 10px 0px rgb(50, 56, 66)',
             }}
           ></div>
 

@@ -14,17 +14,18 @@ const HomeCardes = () => {
 
 
       <h1> Mais destaques</h1>
-      <div className='flex justify-center mb-4 p-4'>
+      <div className='flex items-center justify-center  mb-4 p-4 '>
+
         <Link href='https://br.ign.com/cinema-tv/118944/news/oscar-2024-confira-os-indicados-a-premiacao'>
           <div className='relative '>
             <Image
               src={oppenheimer}
               alt="conteudo 1"
               width={355}
-              style={{ maxWidth: '100%', height: '530px', marginRight: '8px' }}
+              style={{ maxWidth: '100%', height: '530px' }}
             />
-            <div className='absolute bottom-0 w-[355px] p-6 min-h-66 box-bord text-white text-18 leading-1.25 font-bold tracking-wider bg-blue-800 bg-opacity-75'>
-              Texto 1
+            <div className='absolute  bottom-0 w-auto p-6 min-h-66 box-bord text-white text-18 leading-1.25 font-bold tracking-wider bg-blue-800 bg-opacity-75'>
+              <h1>Oscar 2024: Confira os indicados à premiação</h1>
             </div>
           </div>
         </Link>
@@ -34,10 +35,10 @@ const HomeCardes = () => {
               src={serieBlade}
               alt="conteudo 1"
               width={355}
-              style={{ maxWidth: '100%', height: '530px', marginRight: '8px' }}
+              style={{ maxWidth: '100%', height: '530px' }}
             />
-            <div className='absolute bottom-0 w-[355px] p-6 min-h-66 box-bord text-white text-18 leading-1.25 font-bold tracking-wider bg-blue-800 bg-opacity-75'>
-              Texto 1
+            <div className='absolute bottom-0 w-auto p-6 min-h-66 box-bord text-white text-18 leading-1.25 font-bold tracking-wider bg-blue-800 bg-opacity-75'>
+              <h1>Confira o trailer reveleção do táo aguardado Marvel's Blade</h1>
             </div>
           </div>
         </Link>
@@ -47,10 +48,10 @@ const HomeCardes = () => {
               src={theBatman}
               alt="conteudo 1"
               width={355}
-              style={{ maxWidth: '100%', height: '530px', marginRight: '8px' }}
+              style={{ maxWidth: '100%', height: '530px' }}
             />
-            <div className='absolute bottom-0 w-[355px] p-6 min-h-66 box-bord text-white text-18 leading-1.25 font-bold tracking-wider bg-blue-800 bg-opacity-75'>
-              Texto 1
+            <div className='absolute bottom-0 w-auto p-6 min-h-66 box-bord text-white text-18 leading-1.25 font-bold tracking-wider bg-blue-800 bg-opacity-75'>
+              <h>James Gunn explica por que o Batman de Robert Pattinson não faz parte de seu DCU</h>
             </div>
           </div>
         </Link>
@@ -60,15 +61,16 @@ const HomeCardes = () => {
               src={games}
               alt="conteudo 1"
               width={355}
-              style={{ maxWidth: '100%', height: '530px', marginRight: '8px' }}
+              style={{ maxWidth: '100%', height: '530px' }}
             />
-            <div className='absolute bottom-0 w-[355px] p-6 min-h-66 box-bord text-white text-18 leading-1.25 font-bold tracking-wider bg-blue-800 bg-opacity-75'>
-              Texto 1
+            <div className='absolute bottom-0 w-auto p-6 min-h-66 box-bord text-white text-18 leading-1.25 font-bold tracking-wider bg-blue-800 bg-opacity-75'>
+              <h1>14 anos de League of Legends: você se lembra da primeira tela de login do jogo?</h1>
             </div>
           </div>
         </Link>
 
-      </div >
+
+      </div>
     </div>
   )
 }
