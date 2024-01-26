@@ -10,11 +10,9 @@ import Link from 'next/link';
 
 const HomeCardes = () => {
   return (
-    <div>
-
-
-      <h1> Mais destaques</h1>
-      <div className='flex items-center justify-center  mb-4 p-4 '>
+    <div className='py-5'>
+      <h1 className='text-2xl font-bold mb-2'> Mais destaques</h1>
+      <div className='flex space-x-4 items-center justify-center  mb-4 p-4 '>
 
         <Link href='https://br.ign.com/cinema-tv/118944/news/oscar-2024-confira-os-indicados-a-premiacao'>
           <div className='relative '>

@@ -21,7 +21,7 @@ export const SlideComponent: React.FC = () => {
     },
     {
       url: 'https://i.ytimg.com/vi/OewwCPv_82A/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC_wj4TIZ8_5-yXdKi4D-yc8vgeMA',
-      caption: 'Coringa 2 ganha data de estreia oficial',
+      caption: 'Coringa 2 tem estreia marcada para 2024',
       link: 'pages/cine/newInfo',
     },
     {
@@ -98,7 +98,7 @@ export const SlideComponent: React.FC = () => {
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
 
-      <div className='flex top-4 justify-center py-2'>
+      <div className='flex top-4 justify-center py-5'>
         {slides.map((slide, slideIndex) => (
           <div
             key={slideIndex}
