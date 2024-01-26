@@ -22,6 +22,10 @@ body {
   @apply bg-gradient-to-r from-blue-950 via-purple-950 to-pink-950 transition-colors;
 }
 
+.dark p {
+  color: azure;
+}
+
 h1 {
   font-family: 'Geologica', sans-serif, ;
   font-family: 'Open Sans';

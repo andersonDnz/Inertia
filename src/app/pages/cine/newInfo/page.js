@@ -5,7 +5,7 @@ import jokerImage from '@/../../public/joker_coringa_2.jpg';
 const MovieInfo = () => {
   return (
     <div className='min-h-screen flex items-center justify-center p-32'>
-      <div className=" max-w-5xl w-full mx-auto p-8 bg-white  rounded-lg shadow-md text-center">
+      <div className=" max-w-5xl w-full mx-auto p-8 bg-white dark:bg-blue-950  rounded-lg shadow-md text-center">
         <div className="mx-auto mb-6 w-full max-w-[700px]">
           <Image
             src={jokerImage}
