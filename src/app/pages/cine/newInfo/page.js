@@ -5,14 +5,14 @@ import jokerImage from '@/../../public/joker_coringa_2.jpg';
 const MovieInfo = () => {
   return (
     <div className='min-h-screen flex items-center justify-center p-32'>
-      <div className=" max-w-5xl w-full mx-auto p-8 bg-white dark:bg-blue-950  rounded-lg shadow-md text-center">
+      <section className=" max-w-5xl w-full mx-auto p-8 bg-white rounded-lg shadow-md text-center">
         <div className="mx-auto mb-6 w-full max-w-[700px]">
           <Image
             src={jokerImage}
             alt="Joker: Folie a Deux"
-            width={700}
-            height={500}
-            className="mb-6 rounded "
+            width={800}
+            className="mb-6 rounded m-auto"
+            style={{ height: 'auto', width: 'auto' }}
           />
         </div>
         <div>
@@ -46,7 +46,7 @@ const MovieInfo = () => {
             </p>
           </div>
         </div>
-      </div>
+      </section>
     </div>
 
   );
