@@ -46,7 +46,7 @@ const Information = () => {
             </p>
             <p className='text-gray-600 mb-7'>Confira o vídeo:</p>
           </div>
-          <div className='flex mx-auto justify-center mb-10'>
+          <div className='flex mx-auto justify-center mb-10 '>
             <iframe
               width="800px"
               height="735"

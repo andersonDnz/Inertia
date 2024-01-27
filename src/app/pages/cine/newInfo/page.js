@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import jokerImage from '@/../../public/joker_coringa_2.jpg';
 
 const MovieInfo = () => {
@@ -39,11 +40,16 @@ const MovieInfo = () => {
             <p className='text-gray-600 mb-3'>
 
             </p>
-            <p className="text-gray-600">
+            <p className="text-gray-600 mb-10">
               "Joker: Folie a Deux" é a aguardada sequência do aclamado filme "Coringa". O diretor
               Todd Phillips e o premiado ator Joaquin Phoenix retornam para mais uma jornada
               cinematográfica envolvente.
             </p>
+          </div>
+          <div className='mr-[100%] p-2 px-2 border w-20 border-blue-600 bg-blue-400 rounded-full text-lg'>
+            <Link href="/">
+              Voltar
+            </Link>
           </div>
         </div>
       </section>
