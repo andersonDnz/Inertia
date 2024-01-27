@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import deadpool from '@/../../public/deadpool.jpeg';
 
 const Information = () => {
@@ -39,13 +40,27 @@ const Information = () => {
               comentou: "Gostaria de agradecer à FX e à Disney por seu apoio, e em troca disso o Sr. Lively [referência à esposa do ator, Blake Lively]
               promete não fazer besteira com o meu próximo filme".
             </p>
-            <p className='text-gray-600 mb-3'>
+            <p className='text-gray-600 mb-5'>
               "Por fim, quero falar com a Academia do Oscar! Vocês estão avisados, filhos da p*ta. Talvez ano que vem a gente possa ser indicado a melhores efeitos visuais ou algo assim.
               Só o trabalho que eles fazem para consertar a cara do Ryan e do Hugh [Jackman, que será Wolverine no filme] faz por merecer a indicação", brincou ainda.
             </p>
+            <p className='text-gray-600 mb-7'>Confira o vídeo:</p>
           </div>
-          <div className='flex mx-auto '>
-            <iframe width="800px" height="735" src="https://www.youtube.com/embed/7tPmtXJ-kQk" title="Ryan Reynolds thanks the Emmys for his award as DEADPOOL 😅" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div className='flex mx-auto justify-center mb-10'>
+            <iframe
+              width="800px"
+              height="735"
+              src="https://www.youtube.com/embed/7tPmtXJ-kQk"
+              title="Ryan Reynolds thanks the Emmys for his award as DEADPOOL 😅"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div className='mr-[100%] p-2 px-2 border w-20 border-blue-600 bg-blue-400 rounded-full text-lg'>
+            <Link href="/">
+              Voltar
+            </Link>
           </div>
         </div>
       </section>
