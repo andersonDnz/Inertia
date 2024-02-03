@@ -7,7 +7,7 @@ const TopSeriesCards = () => {
     <div>
       <div>
         <h1>
-          Top series de tv mundial!
+          Top series da tv mundial!
         </h1>
         <Link href='/pages/series/tvShow'>
           <Image

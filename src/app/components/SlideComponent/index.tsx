@@ -15,17 +15,17 @@ interface Slide {
 export const SlideComponent: React.FC = () => {
   const slides: Slide[] = [
     {
-      url: 'https://imgs.search.brave.com/cuUr1jPqeUodSTcDJQ_vUQru_hlX-otUFTUJ4mcnWoY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMxLnNyY2RuLmNv/bS93b3JkcHJlc3Mv/d3AtY29udGVudC91/cGxvYWRzLzIwMjQv/MDEvZGVhZHBvb2wt/d2VhcmluZy1hLXN1/aXQtYW5kLWFjY2Vw/dGluZy1hbi1lbW15/LmpwZw',
+      url: 'https://images.alphacoders.com/996/996858.jpg',
       caption: 'Ryan Reynolds aceita Emmy vestido como Deadpool e fala de novo filme',
       link: 'pages/cine/info',
     },
     {
-      url: 'https://i.ytimg.com/vi/OewwCPv_82A/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC_wj4TIZ8_5-yXdKi4D-yc8vgeMA',
+      url: 'https://picfiles.alphacoders.com/313/313193.jpg',
       caption: 'Coringa 2 tem estreia marcada para 2024',
       link: 'pages/cine/newInfo',
     },
     {
-      url: 'https://sm.ign.com/t/ign_br/gallery/t/the-bigges/the-biggest-anime-coming-in-2024_xf48.600.jpg',
+      url: 'https://sm.ign.com/ign_br/photo/t/the-bigges/the-biggest-anime-coming-in-2024_jjrt.jpg',
       caption: 'Os maiores animes que chegam em 2024',
       link: 'pages/animes'
     }
@@ -50,7 +50,7 @@ export const SlideComponent: React.FC = () => {
   }
 
   return (
-    <div className='group max-w-[1900px] h-[700px] w-full m-auto '>
+    <div className='group max-w-[1900px] h-[700px] w-full m-auto p-24'>
       <Link href={slides[currentIndex].link}>
         <div
           style={{
@@ -63,19 +63,21 @@ export const SlideComponent: React.FC = () => {
               'xl:w-[min(100%, 870px)] ' +
               'xl:h-[min(100%, 870px)] ' +
               'w-[calc(100vw - 40px)]'
-              }`}
+              }`} p-32
             style={{
               backgroundImage: `url(${slides[currentIndex].url})`,
-              backgroundSize: 'cover',
+              backgroundSize: '1900px',
+              backgroundPosition: 'center',
               boxShadow: '10px 5px 10px 0px rgb(50, 56, 66)',
             }}
           ></div>
 
           <div
             style={{
+              display: 'flex',
               backgroundColor: 'rgba(34,63,90, 0.75)',
               position: 'absolute',
-              top: '50%',
+              top: '45%',
               left: '50%',
               transform: 'translate(-50%, -50%)',
               color: 'white',
