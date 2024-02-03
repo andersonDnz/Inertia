@@ -4,8 +4,19 @@ import Image from 'next/image';
 
 
 const Dashboard = () => {
+
+  const imageUrl = 'https://images3.alphacoders.com/132/1323165.png';
+
+  const divStyle = {
+    backgroundImage: `url(${imageUrl})`,
+    backgroundSize: '100% 100%',
+    backgroundPosition: 'center',
+  }
+
   return (
-    <div className='min-h-screen flex items-center justify-center p-32'>
+    <div className='min-h-screen flex items-center justify-center p-32'
+      style={divStyle}
+    >
       <section className=" max-w-5xl w-full mx-auto p-8 bg-white rounded-lg shadow-md text-center">
         <h1 className="text-3xl font-bold mb-4">Os maiores animes que chegam em 2024</h1>
         <p className="text-gray-600 mb-4">
