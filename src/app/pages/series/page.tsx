@@ -12,6 +12,7 @@ interface Character {
   first_air_date: number;
   overview: string;
   poster_path: any;
+  popularity: number;
 }
 
 interface ApiResponse {
@@ -21,6 +22,15 @@ interface ApiResponse {
 
 
 export default function TvShow() {
+  const imageUrl = 'https://images4.alphacoders.com/129/1298612.jpg';
+
+  const divStyle = {
+    backgroundImage: `url(${imageUrl})`,
+    backgroundSize: '1200px ',
+    backgroundPosition: 'center',
+  }
+
+
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState<ApiResponse | null>(null);
 
@@ -47,24 +57,27 @@ export default function TvShow() {
       }
     };
 
+
     fetchData();
   }, []);
 
+
   return (
-    <div className='min-h-screen flex items-center justify-center p-32'>
+    <div style={divStyle} className='min-h-screen flex items-center justify-center p-32'>
       {loading ? (
         <p className="max-w-5xl flex w-full mx-auto p-8 bg-white rounded-lg shadow-md text-center">Carregando informações</p>
       ) : (
         data && data.results && data.results.length > 0 ? (
           <div className="flex flex-wrap justify-center p-8 max-w-screen-xl mx-auto">
             {data.results.map((item) => (
+
               <div key={item.id}>
-                <section className="max-w-5xl w-full max-h-screen  mx-auto p-8 bg-white rounded-lg shadow-md text-center mb-4">
-                  <h1 className="">
+
+                <section className="max-w-5xl w-full max-h-screen  mx-auto p-8 bg-white rounded-lg shadow-md text-center  mb-4">
+                  <h1 className="text-blue-900">
                     {item.name}
-                    <p>{item.first_air_date}</p>
                     <p>
-                      {item.overview}
+                      {/*item.overview*/}
                     </p>
                   </h1>
                   {item.poster_path && (
@@ -76,6 +89,8 @@ export default function TvShow() {
                         height={300}
                         style={{ height: 'auto', width: 'auto' }}
                       />
+                      <p> Data:{item.first_air_date}</p>
+                      <p>Popularidade: {item.popularity}</p>
                     </div>
                   )}
                 </section>
