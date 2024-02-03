@@ -66,8 +66,6 @@ const HomeCardes = () => {
             </div>
           </div>
         </Link>
-
-
       </div>
     </div>
   )

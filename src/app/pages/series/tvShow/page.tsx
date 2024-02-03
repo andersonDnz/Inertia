@@ -47,9 +47,7 @@ export default function TvShow() {
 
         const response = await fetch('https://api.themoviedb.org/3/discover/tv?include_adult=false&language=en-US&page=1&sort_by=popularity.desc', options);
         const responseData = await response.json();
-        console.log(responseData)
         setData(responseData);
-        console.log(response)
         setLoading(false);
       } catch (err) {
         console.error(err);
@@ -76,9 +74,7 @@ export default function TvShow() {
                 <section className="max-w-5xl w-full max-h-screen  mx-auto p-8 bg-white rounded-lg shadow-md text-center  mb-4">
                   <h1 className="text-blue-900">
                     {item.name}
-                    <p>
-                      {/*item.overview*/}
-                    </p>
+
                   </h1>
                   {item.poster_path && (
                     <div>

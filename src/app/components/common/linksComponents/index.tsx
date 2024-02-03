@@ -8,7 +8,7 @@ export const LinksComponents = () => {
       <ActiveLink href="/pages/animes">
         Animes
       </ActiveLink>
-      <ActiveLink href="/pages/series">
+      <ActiveLink href="/pages/series/tvShow">
         Series
       </ActiveLink>
     </div>
