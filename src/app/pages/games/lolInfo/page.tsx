@@ -9,17 +9,18 @@ interface Character {
   firstName: string;
   lastName: string;
   imageUrl: any;
+  title: string;
 }
 
 const GotCharacters: React.FC = () => {
   const [data, setData] = useState<Character[] | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  const imgCharacters = '';
+  const imgCharacters = 'https://images5.alphacoders.com/129/1294176.jpg';
 
   const divStyle = {
     backgroundImage: `url(${imgCharacters})`,
-    backgroundSize: '1200px ',
+    backgroundSize: 'cover',
     backgroundPosition: 'center',
   }
 
@@ -59,13 +60,13 @@ const GotCharacters: React.FC = () => {
     <div style={divStyle} className='min-h-screen flex items-center justify-center p-32'>
       {data ? (
 
-        <section className=" max-w-5xl w-full max-h-screen  mx-auto p-8 bg-white rounded-lg shadow-md text-center  mb-4">
 
-          <ul className=''>
-            <div className="flex flex-wrap justify-center p-8 max-w-screen-xl mx-auto">
+        <ul >
+          <div className="flex flex-wrap justify-center p-8 max-w-screen-xl mx-auto">
 
-              {data.map((character) => (
-                <li key={character.id}>
+            {data.map((character) => (
+              <li key={character.id}>
+                <section className=" max-w-5xl w-full max-h-screen  mx-auto p-8 bg-white rounded-lg shadow-md text-center  mb-4">
                   <div>
 
                     <h1 className='text-blue-900 mb-2'>
@@ -81,15 +82,15 @@ const GotCharacters: React.FC = () => {
                         height={300}
                         style={{ height: 'auto', width: 'auto' }}
                       />
-
                     </div>
+                    <h2>{character.title}</h2>
                   </div>
 
-                </li>
-              ))}
-            </div>
-          </ul>
-        </section>
+                </section>
+              </li>
+            ))}
+          </div>
+        </ul>
       ) : (
 
         error ? (
