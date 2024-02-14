@@ -2,15 +2,26 @@
 
 import React, { useState, useEffect } from 'react';
 
+import Image from 'next/image';
+
 interface Character {
   id: number;
   firstName: string;
-
+  lastName: string;
+  imageUrl: any;
 }
 
 const GotCharacters: React.FC = () => {
   const [data, setData] = useState<Character[] | null>(null);
   const [error, setError] = useState<string | null>(null);
+
+  const imgCharacters = '';
+
+  const divStyle = {
+    backgroundImage: `url(${imgCharacters})`,
+    backgroundSize: '1200px ',
+    backgroundPosition: 'center',
+  }
 
   const fetchData = async () => {
     const url = 'https://game-of-thrones1.p.rapidapi.com/Characters';
@@ -29,6 +40,7 @@ const GotCharacters: React.FC = () => {
         const result: Character[] = await response.json();
 
         setData(result);
+        console.log(result)
       } else {
         console.error('Erro na solicitação:', response.status, response.statusText);
         setError(`Erro na solicitação: ${response.status} ${response.statusText}`);
@@ -44,14 +56,40 @@ const GotCharacters: React.FC = () => {
   }, []);
 
   return (
-    <div className='min-h-screen flex items-center justify-center p-32'>
+    <div style={divStyle} className='min-h-screen flex items-center justify-center p-32'>
       {data ? (
 
-        <ul>
-          {data.map((character) => (
-            <li key={character.id}>{character.firstName}</li>
-          ))}
-        </ul>
+        <section className=" max-w-5xl w-full max-h-screen  mx-auto p-8 bg-white rounded-lg shadow-md text-center  mb-4">
+
+          <ul className=''>
+            <div className="flex flex-wrap justify-center p-8 max-w-screen-xl mx-auto">
+
+              {data.map((character) => (
+                <li key={character.id}>
+                  <div>
+
+                    <h1 className='text-blue-900 mb-2'>
+                      {character.firstName}
+                      {character.lastName}
+
+                    </h1>
+                    <div>
+                      <Image
+                        src={character.imageUrl}
+                        alt={`Poster de ${character.firstName}`}
+                        width={150}
+                        height={300}
+                        style={{ height: 'auto', width: 'auto' }}
+                      />
+
+                    </div>
+                  </div>
+
+                </li>
+              ))}
+            </div>
+          </ul>
+        </section>
       ) : (
 
         error ? (
