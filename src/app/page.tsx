@@ -3,6 +3,7 @@ import { SlideComponent } from "./components/SlideComponent";
 import HomeCardes from "../app/components/homePage";
 import TopSeriesCards from "./pages/series/tvShowCard/tvshow";
 import { CardLol } from "./pages/games/cardLol";
+import { CardVikings } from "./pages/series/vikingsCard/vikings";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <h1 className='text-2xl font-bold mb-2'>Confira também</h1>
       <div className="flex p-4 mb-4 justify-between">
         <TopSeriesCards />
+        <CardVikings />
         <CardLol />
       </div>
     </div>
